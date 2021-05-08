@@ -1,0 +1,30 @@
+<html>
+<head>
+   <style type="text/css">
+       body{
+           padding: 200px;
+       }
+   </style>
+</head>
+<body  text="#FF1493" bgcolor="#D3D3D3">
+<center>
+<h1> USER LOGIN FORM </h1>
+<u><font face="arial" color="black">ALREADY HAVE AN ID THEN "LOGIN" OTHERWISE "REGISTER"</font></u>
+<form action="last.html" name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+USER ID: <input type="text" name="frame"><br>
+PASSWORD: <input type="text" name="frame"><br>
+<a href="last.html">HOME</a>
+<input type="submit" value="login">
+<a href="registration.html" target="bottom">REGISTER</a>
+</form>
+<script type="text/javascript">
+   function validateForm() {
+   var x = document.forms["myForm"]["frame"].value;
+   if (x == "") {
+       alert("Name and password must be filled out");
+       return false;
+   }
+}
+</script>
+</body>
+</html>
